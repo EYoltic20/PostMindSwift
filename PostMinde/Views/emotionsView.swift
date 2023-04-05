@@ -14,25 +14,64 @@ struct emotionsView: View {
         GeometryReader{geo in
             VStack(alignment:.center){
                 Text("Te notamos enojado hoy")
-                    .titleFont(30)
-                    .foregroundColor(.black)
+                    .titleFont(30,.black)
                     
+                
+                
                 Text("Es cierto?")
-                    .titleFont(30)
+                    .titleFont(30,.black)
+                    
+                
+                HStack{
+                    Button{
+                        
+                    }label: {
+                        Text("☺️")
+                            .font(.system(size: 60))
+
+                    }
+                    Button{
+                        
+                    }label: {
+                        Text("🤢")
+                            .font(.system(size: 60))
+                    }
+                    Button{
+                        
+                    }label: {
+                        Text("😡")
+                            .font(.system(size: 60))
+                    }
+                    Button{
+                        
+                    }label: {
+                        Text("🥱")
+                            .font(.system(size: 60))
+                    }
+                    
+             
+                }
+                .frame(width: geo.size.width - 20 , height: geo.size.height/4)
+                
                 Text("Que actividad influyo en eso hoy?")
-                    .titleFont(30)
+                    .titleFont(23,.black)
+                    .padding()
+                
+                
+                
                 RoundRectangleTextField()
-                .overlay{
-                    TextField("Escribe tu actividad",text: $notas)
-                }.frame(width:geo.size.width-80,height: geo.size.height/4)
+                    .overlay{
+                        TextField("Escribe tu actividad",text: $notas)
+                            .padding()
+                    }.frame(width:geo.size.width-30,height: geo.size.height/3)
                     .padding()
                 Button{
                     listo.toggle()
                 }label: {
                     bottonView_stroke(text: "Listo")
-                        .frame(width:geo.size.width-80,height: geo.size.height/12)
+                        .frame(width:geo.size.width-80,height: geo.size.height/13)
                 }
-       
+                
                 
             }.frame(width:geo.size.width,height: geo.size.height)
         }

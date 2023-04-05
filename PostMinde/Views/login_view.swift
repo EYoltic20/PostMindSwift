@@ -17,7 +17,7 @@ struct login_view: View {
             VStack(spacing:20){
                 
                 Text("BlueMate")
-                    .titleFont(nil)
+                    .titleFont(nil,Color("azul4"))
                 Spacer()
 //                MARK: -USERNAME
                 RoundedRectangle(cornerRadius: 10)

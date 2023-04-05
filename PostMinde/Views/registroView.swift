@@ -17,7 +17,7 @@ struct registroView: View {
         GeometryReader{geo in
             VStack{
                 Text("BlueMate")
-                    .titleFont(nil)
+                    .titleFont(nil,Color("azul4"))
                 Spacer()
                 //                MARK: -Nombre
                 RoundedRectangle(cornerRadius: 10)

@@ -16,10 +16,10 @@ struct ContentView: View {
                     Spacer()
                     VStack(){
                         Text("Hola")
-                            .titleFont(nil)
+                            .titleFont(nil,Color("azul4"))
                             
                         Text("Soy BlueMate")
-                            .titleFont(nil)
+                            .titleFont(nil,Color("azul4"))
                         Image("blue_mate")
                             .resizable()
                             .scaledToFill()

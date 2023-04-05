@@ -8,8 +8,20 @@
 import SwiftUI
 
 struct AddNewTask: View {
+    @State var newtask = ""
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GeometryReader{geo in
+            VStack{
+                ZStack{
+                    
+                    TextField("Nueva Tarea",text:$newtask)
+                        .textFieldFont(40, .black)
+                        
+                }
+                    
+                
+            }.frame(width:geo.size.width,height: geo.size.height)
+        }
     }
 }
 
