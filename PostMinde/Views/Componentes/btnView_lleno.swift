@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct btnView: View {
+struct btnView_lleno: View {
     var text : String
     var body: some View {
         Capsule()
-            .fill(Color("azul1"))
+            .fill(Color("azul4"))
             .overlay{
                 Text(text)
                     .font(.title)
@@ -24,6 +24,6 @@ struct btnView: View {
 
 struct btnView_Previews: PreviewProvider {
     static var previews: some View {
-        btnView(text: "kk")
+        btnView_lleno(text: "kk")
     }
 }

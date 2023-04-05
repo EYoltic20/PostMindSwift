@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct TabStuffView: View {
-    @State var  option = "home"
+    @State var  option = "chat"
+    @State var isInit  = true
     var body: some View {
         GeometryReader{ geo in
             VStack{
@@ -34,6 +35,9 @@ struct TabStuffView: View {
                 }.accentColor(Color("azul2"))
             }.frame(maxWidth:geo.size.width,maxHeight: geo.size.height)
                 .navigationBarBackButtonHidden(true)
+                .sheet(isPresented:$isInit){
+                    emotionsView(listo: $isInit)
+                }
         }
     }
 }

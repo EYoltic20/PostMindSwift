@@ -15,11 +15,9 @@ struct HomeView: View {
                 ScrollView{
                     Spacer()
                     HStack{
-                        //                    MARK: -Bitocar
+                        //                    MARK: -Bitocara
                         Spacer()
-                        Button{
-                            
-                        }label: {
+                        NavigationLink(destination: BitocoraView()){
                             RoundedRectangle(cornerRadius: 10)
                                 .fill(Color("azul1"))
                                 .overlay{
@@ -28,7 +26,9 @@ struct HomeView: View {
                                         .foregroundColor(Color("negro"))
                                         .fontWeight(.semibold)
                                 }
-                        }.frame(width:geo.size.width-240,height:geo.size.height/10)
+                        }
+                        .frame(width:geo.size.width-240,height:geo.size.height/10)
+
                         //                    MARK: -Ayuda
                         Spacer()
                         Button{
@@ -82,10 +82,12 @@ struct ChartView:View{
     ]
     var body: some View{
         GeometryReader{geo in
-            Chart{
-                ForEach(stats,id: \.emocion){stat in
-                    BarMark(x:.value("Emocion", stat.emocion), y:.value("Conteo", stat.veces) )
-                        .foregroundStyle(returnColor(emocion: stat.emocion))
+            VStack{
+                Chart{
+                    ForEach(stats,id: \.emocion){stat in
+                        BarMark(x:.value("Emocion", stat.emocion), y:.value("Conteo", stat.veces) )
+                            .foregroundStyle(returnColor(emocion: stat.emocion))
+                    }
                 }
             }
         }
