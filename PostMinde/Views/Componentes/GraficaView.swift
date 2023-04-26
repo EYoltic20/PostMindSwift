@@ -9,16 +9,17 @@ import SwiftUI
 import Charts
 
 struct GraficaView: View {
-    var emociones : [ActividadModelo]
+    var emociones : [String]
+    var emocionesCount:[String:Int] 
     var body: some View {
         GeometryReader{ geo in
             GroupBox("Emociones"){
                 Chart{
                     
-                ForEach(emociones) { emocion in
+                    ForEach(emociones,id:\.self) { emocion in
                         BarMark(
-                            x:.value("Emociones",emocion.emocion ),
-                            y:.value("Conteo",  getCountOfEmotion(emociones,emocion.emocion))
+                            x:.value("Emociones",emocion ),
+                            y:.value("Conteo",(emocionesCount[emocion])!)
                         )
                     
                     }
@@ -27,24 +28,16 @@ struct GraficaView: View {
             
         }
     }
-    func getCountOfEmotion(_ emociones: [ActividadModelo],_ emocion: String) ->Int{
-        var count = 0
-        emociones.forEach{ emotion in
-            if (emotion.emocion == emocion){
-                count = count + 1
-            }
-        }
-        print(count)
-        return count
-    }
+   
+
 }
 
 //
-struct GraficaView_Previews: PreviewProvider {
-    static var previews: some View {
-        GraficaView( emociones: [  ActividadModelo("feliz", "Comer", "10:10"),
-                                   ActividadModelo("enojado", "Pelear", "12:12"),
-                                   ActividadModelo("feliz", "Comer", "10:10"),
-                                   ActividadModelo("feliz", "Comer", "10:10")])
-    }
-}
+//struct GraficaView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        GraficaView( emociones: [  ActividadModelo("feliz", "Comer", "10:10"),
+//                                   ActividadModelo("enojado", "Pelear", "12:12"),
+//                                   ActividadModelo("feliz", "Comer", "10:10"),
+//                                   ActividadModelo("feliz", "Comer", "10:10")])
+//    }
+//}

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BitocoraView: View {
-    let listaDeActividades = [
+    @State var listaDeActividades = [
         ActividadModelo("feliz", "Comer", "10:10"),
         ActividadModelo("enojado", "Pelear", "12:12"),
         ActividadModelo("enojado", "Pelear", "12:12"),
@@ -23,7 +23,7 @@ struct BitocoraView: View {
                         .font(.title)
                         .fontWeight(.bold)
                         .frame(width: geo.size.width)
-                    GraficaView(emociones: listaDeActividades)
+                    GraficaView(emociones: emotions(listaDeActividades),emocionesCount: countOfEmotion(listaDeActividades))
                         .padding()
                 }.frame(width: geo.size.width-20,height: geo.size.height/2.5)
                 
@@ -31,9 +31,15 @@ struct BitocoraView: View {
                 List{
                     ForEach(listaDeActividades){ actividad in
                         ListaBitacoraView(color: actividad.color(), queHice: actividad.actividad, emocion: actividad.emocion)
+                            
                     }
+                    .onDelete(perform: { IndexSet in
+                        listaDeActividades.remove(atOffsets: IndexSet)
+                    })
                     .frame(width: geo.size.width-30,height: geo.size.height/9)
+                    
                 }
+                
                 .listStyle(.inset)
                 
             }.frame(width: geo.size.width,height: geo.size.height)
@@ -41,7 +47,7 @@ struct BitocoraView: View {
                 .toolbar{
 //                    MARK: -Boton de agregar rutina
                     ToolbarItem(placement: .navigationBarTrailing){
-                        NavigationLink(destination: AddNewTask()){
+                        NavigationLink(destination: AddNewTask(tareas: $listaDeActividades)){
                             Text("Agregar")
                         }
                     }

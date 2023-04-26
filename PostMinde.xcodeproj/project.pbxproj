@@ -14,6 +14,8 @@
 		2E328F2229DD3854009E4C01 /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E328F2129DD3854009E4C01 /* TextExtensions.swift */; };
 		2E73209429AEC6A50050E03B /* TabStuffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E73209329AEC6A50050E03B /* TabStuffView.swift */; };
 		2E73209629AEC7DB0050E03B /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E73209529AEC7DB0050E03B /* ChatView.swift */; };
+		2EA82C5629F8E9F90077CA37 /* countEmotions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA82C5529F8E9F90077CA37 /* countEmotions.swift */; };
+		2EA82C5829F8F1B10077CA37 /* emotions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA82C5729F8F1B10077CA37 /* emotions.swift */; };
 		2EA9A39429CBB0F60065A46D /* AddNewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA9A39329CBB0F60065A46D /* AddNewTask.swift */; };
 		2EA9A39629CBB1CE0065A46D /* GraficaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA9A39529CBB1CE0065A46D /* GraficaView.swift */; };
 		2ED0E99629ADD4810028B9B6 /* PostMindeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0E99529ADD4810028B9B6 /* PostMindeApp.swift */; };
@@ -38,6 +40,8 @@
 		2E328F2529DD3932009E4C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2E73209329AEC6A50050E03B /* TabStuffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabStuffView.swift; sourceTree = "<group>"; };
 		2E73209529AEC7DB0050E03B /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		2EA82C5529F8E9F90077CA37 /* countEmotions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = countEmotions.swift; sourceTree = "<group>"; };
+		2EA82C5729F8F1B10077CA37 /* emotions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emotions.swift; sourceTree = "<group>"; };
 		2EA9A39329CBB0F60065A46D /* AddNewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTask.swift; sourceTree = "<group>"; };
 		2EA9A39529CBB1CE0065A46D /* GraficaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraficaView.swift; sourceTree = "<group>"; };
 		2ED0E99229ADD4810028B9B6 /* PostMinde.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostMinde.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +82,15 @@
 				2E328F2429DD3904009E4C01 /* title.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		2EA82C5429F8E9E70077CA37 /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				2EA82C5529F8E9F90077CA37 /* countEmotions.swift */,
+				2EA82C5729F8F1B10077CA37 /* emotions.swift */,
+			);
+			path = ModelView;
 			sourceTree = "<group>";
 		};
 		2ED0E98929ADD4810028B9B6 = {
@@ -121,6 +134,7 @@
 		2ED0E9A329ADD4C60028B9B6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2EA82C5429F8E9E70077CA37 /* ModelView */,
 				2E328F2029DD3844009E4C01 /* Extensions */,
 				2EDCD15029CA23BA006899BB /* Componentes */,
 				2ED0E99729ADD4810028B9B6 /* ContentView.swift */,
@@ -228,6 +242,7 @@
 			files = (
 				2EA9A39629CBB1CE0065A46D /* GraficaView.swift in Sources */,
 				2ED0E9A529ADD6680028B9B6 /* RoundRectangleTextField.swift in Sources */,
+				2EA82C5829F8F1B10077CA37 /* emotions.swift in Sources */,
 				2ED0E99829ADD4810028B9B6 /* ContentView.swift in Sources */,
 				2E73209629AEC7DB0050E03B /* ChatView.swift in Sources */,
 				2EDCD14D29CA23A4006899BB /* BitocoraView.swift in Sources */,
@@ -239,6 +254,7 @@
 				2E328F2229DD3854009E4C01 /* TextExtensions.swift in Sources */,
 				2E24264729DD2E490074F6E0 /* registroView.swift in Sources */,
 				2E24264329DD0C180074F6E0 /* bottonView_stroke.swift in Sources */,
+				2EA82C5629F8E9F90077CA37 /* countEmotions.swift in Sources */,
 				2E73209429AEC6A50050E03B /* TabStuffView.swift in Sources */,
 				2ED0E9A729ADD8140028B9B6 /* btnView_lleno.swift in Sources */,
 				2EDCD15629CA2779006899BB /* ActividadModelo.swift in Sources */,

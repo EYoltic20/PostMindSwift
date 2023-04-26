@@ -14,6 +14,7 @@ struct ActividadModelo:Identifiable{
     let actividad:String
     let hora:String
     var  color:() -> UIColor
+    
     init(_ emocion:String,_ actividad: String,_ hora : String){
         self.emocion = emocion
         self.actividad = actividad
@@ -24,11 +25,17 @@ struct ActividadModelo:Identifiable{
                 return .green
             case "enojado":
                 return .red
+            case "aburrido":
+                return .purple
+            case "asco":
+                return .yellow
             default:
                 return .gray
             }
         }
+
     }
+
     
 }
 
