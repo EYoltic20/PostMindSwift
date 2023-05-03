@@ -32,6 +32,12 @@ struct TabStuffView: View {
                                 .foregroundColor(Color("negro"))
                             
                         }.tag("chat")
+                    StatsView()
+                        .tabItem{
+                            Image(systemName: "chart.bar.doc.horizontal")
+                                .frame(width: geo.size.width-300)
+                                .foregroundColor(Color("negro"))
+                        }.tag("stats")
                 }.accentColor(Color("azul2"))
             }.frame(maxWidth:geo.size.width,maxHeight: geo.size.height)
                 .navigationBarBackButtonHidden(true)

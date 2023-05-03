@@ -11,55 +11,68 @@ struct HomeView: View {
     
     var body: some View {
         GeometryReader{geo in
-            VStack(){
+            
+            VStack(alignment:.leading){
+                
+                Text("Bienvendio Juan")
+                    .titleFont(35, Color("azul4"))
+                    .padding()
+                    .padding(.leading,10)
+                    
+                    
+                //                MARK: -Las dos opciones principales
                 ScrollView{
-                    Spacer()
-                    HStack{
-                        //                    MARK: -Bitocara
-                        Spacer()
-                        NavigationLink(destination: BitocoraView()){
-                            RoundedRectangle(cornerRadius: 10)
-                                .fill(Color("azul1"))
-                                .overlay{
-                                    Text("Bitacora")
-                                        .font(.title2)
-                                        .foregroundColor(Color("negro"))
-                                        .fontWeight(.semibold)
-                                }
+                    VStack(alignment:.leading){
+                        Text("Mis Actividades")
+                            .titleFont(30, .black)
+                            .padding()
+                        
+                    
+                        NavigationLink(destination:BitocoraView()){
+                            btnView_Cuadrado(text: "Mi Actvidad")
                         }
-                        .frame(width:geo.size.width-240,height:geo.size.height/10)
-
-                        //                    MARK: -Ayuda
-                        Spacer()
-                        Button{
+                        
+                        .frame(width: geo.size.width-50,height: geo.size.height/8)
+                        .padding()
+                        Text("Mi ayuda")
+                            .titleFont(30, .black)
+                            .padding()
                             
-                        }label: {
-                            RoundedRectangle(cornerRadius: 10)
-                                .fill(Color("azul1"))
-                                .overlay{
-                                    Text("Ayuda")
-                                        .font(.title2)
-                                        .foregroundColor(Color("negro"))
-                                        .fontWeight(.semibold)
-                                }
-                        }.frame(width:geo.size.width-240,height:geo.size.height/10)
-                        Spacer()
-                    }.frame(width:geo.size.width - 30,height: geo.size.height/6).padding()
-                    //                MARK: -Grafica
-                    Spacer()
+                        btnView_Cuadrado(text: "Ayuda")
+                            .frame(width: geo.size.width-50,height: geo.size.height/8)
+                            .padding()
+                        
+                        Text("Mi lugar seguro")
+                            .titleFont(30, .black)
+                            .padding()
+                        HStack{
+                            Spacer()
+                            btnView_Cuadrado(text: "Mi registro emocional")
+                                .frame(width: geo.size.width/2.2,height: geo.size.height/11)
+                            Spacer()
+                            btnView_Cuadrado(text: "Mi afirmacion de hoy")
+                                .frame(width: geo.size.width/2.2,height: geo.size.height/11)
+                            Spacer()
+                        }.frame(width:geo.size.width)
+                        HStack{
+                            Spacer()
+                            btnView_Cuadrado(text: "Hora de relajarme")
+                                .frame(width: geo.size.width/2.2,height: geo.size.height/11)
+                            Spacer()
+                            btnView_Cuadrado(text: "MI gratitud de hoy")
+                                .frame(width: geo.size.width/2.2,height: geo.size.height/11)
+                            Spacer()
+                        }.frame(width:geo.size.width)
+                            
+                    }.frame(width:geo.size.width)
+                        .padding()
                     
-                    VStack{
-                        Text("Contedo de Emociones")
-                            .font(.title)
-                            .fontWeight(.semibold)
-                        ChartView()
-                    }
-                    .frame(width:geo.size.width-30,height: geo.size.height/2.6)
-                    
+                
                     
                 }
+             Spacer()
             }
-            .frame(maxWidth:geo.size.width,maxHeight: geo.size.height)
+            .frame(width:geo.size.width,height: geo.size.height)
             .background{
                 Color.white.ignoresSafeArea()
             }
@@ -72,45 +85,7 @@ struct Stats{
     let veces:Int
 }
 //MARK: -CHARTVIEW
-struct ChartView:View{
-    var stats = [Stats(emocion: "Feliz", veces: 2),
-                 Stats(emocion: "Enojado", veces: 1),
-                 Stats(emocion: "Triste", veces: 5),
-                 Stats(emocion: "Raro", veces: 3),
-                 Stats(emocion: "Vacio", veces: 7),
-                 
-    ]
-    var body: some View{
-        GeometryReader{geo in
-            VStack{
-                Chart{
-                    ForEach(stats,id: \.emocion){stat in
-                        BarMark(x:.value("Emocion", stat.emocion), y:.value("Conteo", stat.veces) )
-                            .foregroundStyle(returnColor(emocion: stat.emocion))
-                    }
-                }
-            }
-        }
-    }
-    
-}
 
-func returnColor(emocion:String)->Color{
-    switch emocion{
-    case "Feliz":
-        return Color.green
-    case "Enojado":
-        return Color.red
-    case "Triste":
-        return Color.cyan
-    case "Raro":
-        return Color.indigo
-    case "Vacio":
-        return Color.mint
-    default:
-        return Color.black
-    }
-}
 
 
 
