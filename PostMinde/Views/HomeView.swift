@@ -29,7 +29,7 @@ struct HomeView: View {
                         
                     
                         NavigationLink(destination:BitocoraView()){
-                            btnView_Cuadrado(text: "Mi Actvidad")
+                            btnView_Cuadrado(size: 40, text: "Mi Actvidad")
                         }
                         
                         .frame(width: geo.size.width-50,height: geo.size.height/8)
@@ -38,7 +38,7 @@ struct HomeView: View {
                             .titleFont(30, .black)
                             .padding()
                             
-                        btnView_Cuadrado(text: "Ayuda")
+                        btnView_Cuadrado(size: 40, text: "Ayuda" )
                             .frame(width: geo.size.width-50,height: geo.size.height/8)
                             .padding()
                         
@@ -47,19 +47,19 @@ struct HomeView: View {
                             .padding()
                         HStack{
                             Spacer()
-                            btnView_Cuadrado(text: "Mi registro emocional")
+                            btnView_Cuadrado(size: 20, text: "Mi registro emocional")
                                 .frame(width: geo.size.width/2.2,height: geo.size.height/11)
                             Spacer()
-                            btnView_Cuadrado(text: "Mi afirmacion de hoy")
+                            btnView_Cuadrado(size: 20, text: "Mi afirmacion de hoy")
                                 .frame(width: geo.size.width/2.2,height: geo.size.height/11)
                             Spacer()
                         }.frame(width:geo.size.width)
                         HStack{
                             Spacer()
-                            btnView_Cuadrado(text: "Hora de relajarme")
+                            btnView_Cuadrado(size: 20, text: "Hora de relajarme")
                                 .frame(width: geo.size.width/2.2,height: geo.size.height/11)
                             Spacer()
-                            btnView_Cuadrado(text: "MI gratitud de hoy")
+                            btnView_Cuadrado(size: 20, text: "MI gratitud de hoy" )
                                 .frame(width: geo.size.width/2.2,height: geo.size.height/11)
                             Spacer()
                         }.frame(width:geo.size.width)

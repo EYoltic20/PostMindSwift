@@ -12,16 +12,17 @@
 		2E24264729DD2E490074F6E0 /* registroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E24264629DD2E490074F6E0 /* registroView.swift */; };
 		2E328F1F29DD3493009E4C01 /* emotionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E328F1E29DD3493009E4C01 /* emotionsView.swift */; };
 		2E328F2229DD3854009E4C01 /* TextExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E328F2129DD3854009E4C01 /* TextExtensions.swift */; };
-		2E3A88702A0220F800D7CA5A /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A886F2A0220F800D7CA5A /* StatsView.swift */; };
 		2E3A88722A02212D00D7CA5A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A88712A02212D00D7CA5A /* ProfileView.swift */; };
 		2E3A88742A02236C00D7CA5A /* btn_Cuadrado.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A88732A02236C00D7CA5A /* btn_Cuadrado.swift */; };
-		2E3A88762A0232F700D7CA5A /* AyudaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A88752A0232F700D7CA5A /* AyudaView.swift */; };
 		2E73209429AEC6A50050E03B /* TabStuffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E73209329AEC6A50050E03B /* TabStuffView.swift */; };
 		2E73209629AEC7DB0050E03B /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E73209529AEC7DB0050E03B /* ChatView.swift */; };
 		2EA82C5629F8E9F90077CA37 /* countEmotions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA82C5529F8E9F90077CA37 /* countEmotions.swift */; };
 		2EA82C5829F8F1B10077CA37 /* emotions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA82C5729F8F1B10077CA37 /* emotions.swift */; };
 		2EA9A39429CBB0F60065A46D /* AddNewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA9A39329CBB0F60065A46D /* AddNewTask.swift */; };
 		2EA9A39629CBB1CE0065A46D /* GraficaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA9A39529CBB1CE0065A46D /* GraficaView.swift */; };
+		2EB036462A25C83600128E54 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB036452A25C83600128E54 /* UserModel.swift */; };
+		2EB036482A25CD5C00128E54 /* psicologoModelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB036472A25CD5C00128E54 /* psicologoModelo.swift */; };
+		2EB0364A2A25CDFA00128E54 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB036492A25CDFA00128E54 /* HelpView.swift */; };
 		2ED0E99629ADD4810028B9B6 /* PostMindeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0E99529ADD4810028B9B6 /* PostMindeApp.swift */; };
 		2ED0E99829ADD4810028B9B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED0E99729ADD4810028B9B6 /* ContentView.swift */; };
 		2ED0E99A29ADD4830028B9B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ED0E99929ADD4830028B9B6 /* Assets.xcassets */; };
@@ -42,16 +43,17 @@
 		2E328F2129DD3854009E4C01 /* TextExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtensions.swift; sourceTree = "<group>"; };
 		2E328F2429DD3904009E4C01 /* title.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = title.ttf; sourceTree = "<group>"; };
 		2E328F2529DD3932009E4C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		2E3A886F2A0220F800D7CA5A /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		2E3A88712A02212D00D7CA5A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		2E3A88732A02236C00D7CA5A /* btn_Cuadrado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = btn_Cuadrado.swift; sourceTree = "<group>"; };
-		2E3A88752A0232F700D7CA5A /* AyudaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyudaView.swift; sourceTree = "<group>"; };
 		2E73209329AEC6A50050E03B /* TabStuffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabStuffView.swift; sourceTree = "<group>"; };
 		2E73209529AEC7DB0050E03B /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		2EA82C5529F8E9F90077CA37 /* countEmotions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = countEmotions.swift; sourceTree = "<group>"; };
 		2EA82C5729F8F1B10077CA37 /* emotions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emotions.swift; sourceTree = "<group>"; };
 		2EA9A39329CBB0F60065A46D /* AddNewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTask.swift; sourceTree = "<group>"; };
 		2EA9A39529CBB1CE0065A46D /* GraficaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraficaView.swift; sourceTree = "<group>"; };
+		2EB036452A25C83600128E54 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		2EB036472A25CD5C00128E54 /* psicologoModelo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = psicologoModelo.swift; sourceTree = "<group>"; };
+		2EB036492A25CDFA00128E54 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 		2ED0E99229ADD4810028B9B6 /* PostMinde.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostMinde.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED0E99529ADD4810028B9B6 /* PostMindeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostMindeApp.swift; sourceTree = "<group>"; };
 		2ED0E99729ADD4810028B9B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -154,8 +156,8 @@
 				2E24264629DD2E490074F6E0 /* registroView.swift */,
 				2E24264429DD0CC80074F6E0 /* login_view.swift */,
 				2E328F1E29DD3493009E4C01 /* emotionsView.swift */,
-				2E3A886F2A0220F800D7CA5A /* StatsView.swift */,
 				2E3A88712A02212D00D7CA5A /* ProfileView.swift */,
+				2EB036492A25CDFA00128E54 /* HelpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,7 +171,6 @@
 				2ED0E9A429ADD6680028B9B6 /* RoundRectangleTextField.swift */,
 				2E24264229DD0C180074F6E0 /* bottonView_stroke.swift */,
 				2E3A88732A02236C00D7CA5A /* btn_Cuadrado.swift */,
-				2E3A88752A0232F700D7CA5A /* AyudaView.swift */,
 			);
 			path = Componentes;
 			sourceTree = "<group>";
@@ -178,6 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				2EDCD15529CA2779006899BB /* ActividadModelo.swift */,
+				2EB036452A25C83600128E54 /* UserModel.swift */,
+				2EB036472A25CD5C00128E54 /* psicologoModelo.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -256,12 +259,15 @@
 				2ED0E9A529ADD6680028B9B6 /* RoundRectangleTextField.swift in Sources */,
 				2EA82C5829F8F1B10077CA37 /* emotions.swift in Sources */,
 				2ED0E99829ADD4810028B9B6 /* ContentView.swift in Sources */,
+				2EB0364A2A25CDFA00128E54 /* HelpView.swift in Sources */,
 				2E73209629AEC7DB0050E03B /* ChatView.swift in Sources */,
 				2EDCD14D29CA23A4006899BB /* BitocoraView.swift in Sources */,
+				2EB036482A25CD5C00128E54 /* psicologoModelo.swift in Sources */,
 				2ED0E99629ADD4810028B9B6 /* PostMindeApp.swift in Sources */,
 				2E328F1F29DD3493009E4C01 /* emotionsView.swift in Sources */,
 				2EDCD15229CA244D006899BB /* ListaBitacoraView.swift in Sources */,
 				2ED0E9A929ADDDC50028B9B6 /* HomeView.swift in Sources */,
+				2EB036462A25C83600128E54 /* UserModel.swift in Sources */,
 				2E24264529DD0CC80074F6E0 /* login_view.swift in Sources */,
 				2E328F2229DD3854009E4C01 /* TextExtensions.swift in Sources */,
 				2E24264729DD2E490074F6E0 /* registroView.swift in Sources */,
@@ -269,10 +275,8 @@
 				2EA82C5629F8E9F90077CA37 /* countEmotions.swift in Sources */,
 				2E3A88742A02236C00D7CA5A /* btn_Cuadrado.swift in Sources */,
 				2E73209429AEC6A50050E03B /* TabStuffView.swift in Sources */,
-				2E3A88702A0220F800D7CA5A /* StatsView.swift in Sources */,
 				2ED0E9A729ADD8140028B9B6 /* btnView_lleno.swift in Sources */,
 				2EDCD15629CA2779006899BB /* ActividadModelo.swift in Sources */,
-				2E3A88762A0232F700D7CA5A /* AyudaView.swift in Sources */,
 				2E3A88722A02212D00D7CA5A /* ProfileView.swift in Sources */,
 				2EA9A39429CBB0F60065A46D /* AddNewTask.swift in Sources */,
 			);

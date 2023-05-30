@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct btnView_Cuadrado: View {
-    
+    var size : Int
     var text : String
     var body: some View {
         GeometryReader{ geo in
@@ -18,7 +18,7 @@ struct btnView_Cuadrado: View {
                 .overlay{
                     VStack(alignment:.leading){
                         Text(text)
-                            .font(.title)
+                            .font(.system(size: CGFloat(size)))
                             .foregroundColor(.white)
                             .bold()
                     }

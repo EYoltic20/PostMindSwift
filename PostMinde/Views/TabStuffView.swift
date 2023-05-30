@@ -32,9 +32,9 @@ struct TabStuffView: View {
                                 .foregroundColor(Color("negro"))
                             
                         }.tag("chat")
-                    StatsView()
+                    ProfileView()
                         .tabItem{
-                            Image(systemName: "chart.bar.doc.horizontal")
+                            Image(systemName: "person")
                                 .frame(width: geo.size.width-300)
                                 .foregroundColor(Color("negro"))
                         }.tag("stats")

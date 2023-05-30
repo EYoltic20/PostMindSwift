@@ -28,15 +28,17 @@ struct BitocoraView: View {
                 }.frame(width: geo.size.width-20,height: geo.size.height/2.5)
                 
 //                MARK: -lista que desplegara las actividades
-                List{
+                ScrollView{
                     ForEach(listaDeActividades){ actividad in
-                        ListaBitacoraView(color: actividad.color(), queHice: actividad.actividad, emocion: actividad.emocion)
+                        ListaBitacoraView(color: actividad.color(), queHice: actividad.actividad, emocion: actividad.emocion,fecha:Date.now )
+                            .frame(width: geo.size.width-30,height: geo.size.height/5)
                             
                     }
-                    .onDelete(perform: { IndexSet in
-                        listaDeActividades.remove(atOffsets: IndexSet)
-                    })
-                    .frame(width: geo.size.width-30,height: geo.size.height/9)
+                    .frame(height:.infinity)
+//                    .onDelete(perform: { IndexSet in
+//                        listaDeActividades.remove(atOffsets: IndexSet)
+//                    })
+                    
                     
                 }
                 

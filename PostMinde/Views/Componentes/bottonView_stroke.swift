@@ -14,9 +14,10 @@ struct bottonView_stroke: View {
             .stroke(Color("azul1"),lineWidth: 3)
             .overlay{
                 Text(text)
-                    .font(.title)
+                    .font(.system(size: 18))
                     .foregroundColor(Color("azul1"))
                     .bold()
+                
                     
             }
     }
